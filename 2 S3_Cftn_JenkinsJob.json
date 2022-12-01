@@ -22,8 +22,19 @@
                     ]
                 }
             }
+        },
+        "Ec2Instance": {
+            "Type": "AWS::EC2:Instance",
+            "Properties": {
+                "InstanceType": "t2.micro",
+                "ImageId": "ami-0d32b7844bdde8bdf",
+                "SubnetId": "subnet-0db45219b39c1fe88",
+                "KeyName" : "key-04b44f2841230ca82"
+            }
         }
+
     },
+        
     "Outputs": {
         "BucketName": {
             "Value": {
