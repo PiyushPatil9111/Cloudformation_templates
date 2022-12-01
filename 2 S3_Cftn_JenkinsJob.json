@@ -4,6 +4,7 @@
         "KeyPair" : {
             "Description": "Name of an existing EC2 KeyPair, Using KeyPair Pseudo Parameter ",
             "Type": "AWS::EC2::KeyPair::KeyName",
+            "Default": "key-04cd56840b1b5b994",
             "ConstraintDescription": "must be the name of an existing EC2 KeyPair."
         }
     },
