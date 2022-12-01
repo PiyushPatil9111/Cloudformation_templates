@@ -1,13 +1,5 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Parameters":{
-        "KeyPair" : {
-            "Description": "Name of an existing EC2 KeyPair, Using KeyPair Pseudo Parameter ",
-            "Type": "AWS::EC2::KeyPair::KeyName",
-            "Default": "key-0d19e634b62681826",
-            "ConstraintDescription": "must be the name of an existing EC2 KeyPair."
-        }
-    },
     
     "Resources": {
         "S3Bucket": {
