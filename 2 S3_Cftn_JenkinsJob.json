@@ -31,26 +31,6 @@
                     ]
                 }
             }
-        },
-        "Ec2Instance": {
-            "Type": "AWS::EC2::Instance",
-            "Properties": {
-                "InstanceType": "t2.micro",
-                "AvailabilityZone": "ap-south-1b",
-                "ImageId": "ami-0d32b7844bdde8bdf",
-                "SubnetId": "subnet-0db45219b39c1fe88",
-                "KeyName": {"Ref": "KeyPair"}
-            }
         }
-
-    },
-        
-    "Outputs": {
-        "BucketName": {
-            "Value": {
-                "Ref": "S3Bucket"
-            },
-            "Description": "Name of the sample Amazon S3 bucket with a lifecycle configuration."
-        }
-    }
+}
 }
